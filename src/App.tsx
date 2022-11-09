@@ -1,13 +1,14 @@
-import type { Component } from 'solid-js';
+import { Component, } from 'solid-js';
+import { Bookshelf } from './components/Bookshelf';
+import Counter from './components/Counter';
 
 
 const App: Component = () => {
   return (
-      <header>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
+    <div>
+      <Bookshelf name='solid'/>
+      <Counter />
+    </div>
   );
 };
 
